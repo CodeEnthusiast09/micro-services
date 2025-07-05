@@ -1,0 +1,13 @@
+version: '3.1'
+
+# Define your tools here (e.g MongoDB, PostgreSql,  Redis, ElasticSearch, Kibana, MySql e.t.c)
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017
