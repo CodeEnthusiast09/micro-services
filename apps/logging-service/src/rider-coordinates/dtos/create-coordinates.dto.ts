@@ -1,15 +1,15 @@
 import { IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreateCoordinatesDto {
-  @IsNotEmpty()
   @IsNumber()
+  @IsNotEmpty()
   lat: number;
 
-  @IsNotEmpty()
   @IsNumber()
+  @IsNotEmpty()
   lng: number;
 
-  @IsNotEmpty()
   @IsNumber()
+  @IsNotEmpty()
   riderId: number;
 }
